@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F4F7FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONTROL DE LUZ IoT"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#172554"
+            android:gravity="center"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="30dp"/>
+
+        <!-- Texto estado -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estado de la luz"
+            android:textSize="20sp"
+            android:textColor="#475569"
+            android:gravity="center"/>
+
+        <!-- Estado dinámico -->
+        <TextView
+            android:id="@+id/txtEstado"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#475569"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Encender -->
+        <Button
+            android:id="@+id/btnEncender"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="ENCENDER LUZ"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#16A34A"/>
+
+        <!-- Apagar -->
+        <Button
+            android:id="@+id/btnApagar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="APAGAR LUZ"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#DC2626"/>
+
+        <!-- Historial -->
+        <Button
+            android:id="@+id/btnHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="VER HISTORIAL"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#2563EB"/>
+
+        <TextView
+            android:id="@+id/txtHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aquí aparecerán los eventos de la luz"
+            android:textSize="15sp"
+            android:textColor="#475569"
+            android:gravity="center"
+            android:padding="16dp"/>
+
+        <!-- Cerrar sesión -->
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="CERRAR SESIÓN"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#64748B"/>
+
+    </LinearLayout>
+
+</ScrollView>
